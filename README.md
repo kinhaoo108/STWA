@@ -1,9 +1,9 @@
 # STWA
 # Requirements
 python 3.8.2 
-scipy==1.3.1  
-pytorch==1.1.0  
-scikit-learn==0.21.3  
+scipy==1.7.1  
+pytorch==1.10.0  
+scikit-learn==1.0.1  
 # How to use
 ## Dataset
 The main directory contains the directories of two Twitter datasets: twitter15 and twitter16. In each directory, there are:  
@@ -19,7 +19,6 @@ ind.twitter1*.user.tweet.dev files: the index of the validation set in the globa
 ind.twitter1*.user.tweet.test files: the index of the testing set in the global graph.  
 ind.twitter1*.user.tweet.adj.tc* files: the weight adjacency matrix of the global graph which simulated the task of early detection by controlling the received tweets.  
 ind.twitter1*.user.tweet.adj.et* files: the weight adjacency matrix of the global graph which simulated the task of early detection by controlling the elapsed time.  
-These datasets are preprocessed according to our requirement and original datasets can be available at [here](https://www.dropbox.com/s/7ewzdrbelpmrnxu/rumdetect2017.zip?dl=0)
 
 ## Training & Testing
 sh run.sh 0 twitter15\[twitter16\]
